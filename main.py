@@ -28,7 +28,7 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
           self.wfile.write(b"-- SERVER RUNNING>>RAJ MISHRA H3R3")  # Changed to Raj Mishra
 
 def execute_server():
-      PORT = 4000
+      PORT = 3000
 
       with socketserver.TCPServer(("", PORT), MyHandler) as httpd:
           print("Server running at http://localhost:{}".format(PORT))
